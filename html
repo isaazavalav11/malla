@@ -44,10 +44,103 @@
 <body>
 
   <h1>Malla Curricular - Agronomía (Universidad de Talca)</h1>
+<!-- Semestre 1 -->
+<div class="semestre">
+  <h2>Semestre 1</h2>
+  <div class="materia">AGCH1 - Geografía de Chile y Agricultura</div>
+  <div class="materia">ALG1 - Álgebra</div>
+  <div class="materia">QI1 - Química Inorgánica</div>
+  <div class="materia">BC1 - Biología Celular</div>
+  <div class="materia">COE1 - COE I</div>
+  <div class="materia">DEP1 - Deportes I</div>
+  <div class="materia">ING1 - Idioma Extranjero I</div>
+</div>
 
-  <!-- Aquí van los semestres -->
-  <!-- Pega el contenido dinámico aquí (sigue abajo) -->
+<!-- Semestre 2 -->
+<div class="semestre">
+  <h2>Semestre 2</h2>
+  <div class="materia" data-prereq="ALG1, QI1">CAL1 - Cálculo I</div>
+  <div class="materia" data-prereq="BC1">AMDV2 - Morfo y Desarrollo Vegetal</div>
+  <div class="materia" data-prereq="COE1">COE2 - COE II</div>
+  <div class="materia" data-prereq="ING1">ING2 - Idioma Extranjero II</div>
+  <div class="materia" data-prereq="DEP1">DEP2 - Deportes II</div>
+</div>
 
+<!-- Semestre 3 -->
+<div class="semestre">
+  <h2>Semestre 3</h2>
+  <div class="materia" data-prereq="CAL1">FSI3 - Física</div>
+  <div class="materia" data-prereq="CAL1">EST3 - Estadística</div>
+  <div class="materia" data-prereq="ALG1, QI1">CAI2 - Cálculo II</div>
+  <div class="materia" data-prereq="QO2, BC1">BV3 - Bioquímica Vegetal</div>
+  <div class="materia" data-prereq="AMDV2">SV3 - Sistemática Vegetal</div>
+  <div class="materia" data-prereq="QO2, BC1, AGCH2">SPA1.3 - Sistemas Producción Animal I</div>
+  <div class="materia" data-prereq="COE2">AA3 - Autogestión del Aprendizaje</div>
+  <div class="materia" data-prereq="ING2">ING3 - Idioma Extranjero III</div>
+</div>
+
+<!-- Semestre 4 -->
+<div class="semestre">
+  <h2>Semestre 4</h2>
+  <div class="materia" data-prereq="AMDV2, AGCH2, CAI2, EST3">MI1.3 - Módulo Integración I</div>
+  <div class="materia">FAC4 - FAC</div>
+  <div class="materia" data-prereq="BV3, AMDV2">EDF4 - Edafología</div>
+  <div class="materia" data-prereq="BV3, AMDV2">FV4 - Fisiología Vegetal</div>
+  <div class="materia" data-prereq="EDF4">MB4 - Microbiología</div>
+  <div class="materia" data-prereq="SPA1.3">SPA2.4 - Sistemas Producción Animal II</div>
+  <div class="materia" data-prereq="AA3">TRAB4 - Trabajo en Equipo</div>
+  <div class="materia" data-prereq="ING3">ING4 - Idioma Extranjero IV</div>
+  <div class="materia" data-prereq="DEP2">DEP3 - Deportes III</div>
+</div>
+
+<!-- Semestre 5 -->
+<div class="semestre">
+  <h2>Semestre 5</h2>
+  <div class="materia" data-prereq="MI1.3">MI2.5 - Módulo Integración II</div>
+  <div class="materia" data-prereq="EDF4, FV4">MAS - Mecanización Agrícola</div>
+  <div class="materia" data-prereq="EDF4">FSNVS - Fertilidad de Suelos y Nutrición Vegetal</div>
+  <div class="materia" data-prereq="EDF4">EFVS - Ecofisiología Vegetal</div>
+  <div class="materia" data-prereq="FV4, FAC4">AGCS - Agrometeorología</div>
+  <div class="materia" data-prereq="MB4, FV4">SV1.5 - Sanidad Vegetal I</div>
+  <div class="materia" data-prereq="TRAB4">CCSS5 - Contextos Sociales</div>
+  <div class="materia" data-prereq="TRAB4">ING5 - Idioma Extranjero V</div>
+</div>
+
+<!-- Semestre 6 -->
+<div class="semestre">
+  <h2>Semestre 6</h2>
+  <div class="materia" data-prereq="EFVS">AG6C - Agroecología</div>
+  <div class="materia" data-prereq="MI2.5, FAC4">TE6 - Teoría Económica</div>
+  <div class="materia" data-prereq="SV1.5, EFVS, FSNVS">FRU6 - Fruticultura</div>
+  <div class="materia" data-prereq="EFVS">FRI6 - Fundamentos de Riego</div>
+  <div class="materia" data-prereq="SV1.5">SV2.6 - Sanidad Vegetal II</div>
+  <div class="materia" data-prereq="CCSS5">CCGS6 - Contextos Culturales</div>
+  <div class="materia" data-prereq="ING5">ING6 - Idioma Extranjero VI</div>
+</div>
+
+<!-- Semestre 7 -->
+<div class="semestre">
+  <h2>Semestre 7</h2>
+  <div class="materia" data-prereq="FRI6, TE6">BIOE7 - Bioestadística</div>
+  <div class="materia" data-prereq="TE6">PEA7 - Política y Economía Agraria</div>
+  <div class="materia" data-prereq="FRU6">P87 - Producción Vitícola</div>
+  <div class="materia" data-prereq="SV1.5, EFVS, FSNVS">OLC7 - Oleicultura</div>
+  <div class="materia" data-prereq="FRU6">FPC7 - Postcosecha y Responsabilidad Ética</div>
+  <div class="materia" data-prereq="CCGS6">ERS7 - Ética y Responsabilidad Social</div>
+  <div class="materia" data-prereq="MI2.5">PRC7 - Práctica Obrera</div>
+</div>
+
+<!-- Semestre 8 -->
+<div class="semestre">
+  <h2>Semestre 8</h2>
+  <div class="materia" data-prereq="PEA7">GA8 - Gestión de Agronegocios</div>
+  <div class="materia" data-prereq="PEA7">FP8 - Formulación de Proyectos</div>
+  <div class="materia" data-prereq="FRU6">FRF8 - Frutales</div>
+  <div class="materia" data-prereq="FRI6">SR8 - Sistemas de Riego</div>
+  <div class="materia" data-prereq="SV1.5, EFVS, FSNVS">PC8 - Producción de Cultivos</div>
+  <div class="materia" data-prereq="ERS7">RS8 - Responsabilidad Social</div>
+</div>
+  
   <!-- Script de interacción -->
   <script>
     function toggleCompletion(e) {
