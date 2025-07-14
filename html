@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular - Agronomía UTalca</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; }
+    .semestre { margin-bottom: 30px; }
+    h2 { color: #2e7d32; }
+    .materia {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      background-color: #e0e0e0;
+      cursor: pointer;
+      position: relative;
+    }
+    .materia:hover {
+      background-color: #c5e1a5;
+    }
+    .materia.completada {
+      background-color: #66bb6a;
+      color: white;
+    }
+    .materia[data-prereq]:after {
+      content: attr(data-prereq);
+      position: absolute;
+      top: -5px;
+      left: 100%;
+      background: #444;
+      color: #fff;
+      padding: 3px 6px;
+      font-size: 12px;
+      border-radius: 4px;
+      white-space: nowrap;
+      display: none;
+    }
+    .materia:hover:after {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Malla Curricular - Agronomía (Universidad de Talca)</h1>
+
+  <!-- Aquí van los semestres -->
+  <!-- Pega el contenido dinámico aquí (sigue abajo) -->
+
+  <!-- Script de interacción -->
+  <script>
+    function toggleCompletion(e) {
+      e.classList.toggle('completada');
+    }
+
+    document.querySelectorAll('.materia').forEach(m => {
+      m.addEventListener('click', () => toggleCompletion(m));
+    });
+  </script>
+
+</body>
+</html>
