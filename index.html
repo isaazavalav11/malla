@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular - Ingeniería</title>
+  <style>
+    body { font-family: sans-serif; background: #f4f4f4; padding: 20px; }
+    .semestre { margin-bottom: 20px; padding: 10px; background: #fff; border-radius: 5px; box-shadow: 0 0 4px rgba(0,0,0,0.1); }
+    .materia { display: inline-block; margin: 5px; padding: 10px 15px; border-radius: 4px; background-color: #e0e0e0; cursor: pointer; }
+    .materia.completada { background-color: #4caf50; color: white; }
+  </style>
+</head>
+<body>
+
+  <h1>Malla Curricular - Ingeniería</h1>
+
+  <div class="semestre">
+    <h2>Semestre 1</h2>
+    <div class="materia" onclick="toggle(this)">Cálculo I</div>
+    <div class="materia" onclick="toggle(this)">Programación I</div>
+    <div class="materia" onclick="toggle(this)">Física I</div>
+  </div>
+
+  <div class="semestre">
+    <h2>Semestre 2</h2>
+    <div class="materia" onclick="toggle(this)">Cálculo II</div>
+    <div class="materia" onclick="toggle(this)">Programación II</div>
+    <div class="materia" onclick="toggle(this)">Física II</div>
+  </div>
+
+  <script>
+    function toggle(element) {
+      element.classList.toggle('completada');
+    }
+  </script>
+
+</body>
+</html>
